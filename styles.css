@@ -1,29 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
     font-family: Roboto;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    max-width: 40%;
+    margin: 0;
 }
 
 header {
     background-color: #1F2937;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .hero {
     background-color: #1F2937;
     display: flex;
     flex: 1;
+    padding: 6rem;
+}
+
+#hero-content {
+    display: flex;
+    flex-direction: column;
 }
 
 .information {
     display: flex;
+    flex-direction: column;
     flex: 1;
+    align-items: center;
 }
 
 .quote {
     background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 10rem;
 }
 
 .call-to-action {
@@ -47,15 +64,23 @@ button {
 }
 
 #quote-text {
-    font-size: 36px;
+    font-size: 24px;
     color: #1F2937;
     font-family: "light italic";
+    margin-bottom: 0;
+}
+
+#quote-person {
+    align-self: flex-end;
+    margin-top: 0;
+    font-weight: bold;
 }
 
 #hero-main-text {
     font-size: 48px;
     color: #F9FAF8;
     font-weight: 900;
+    margin: 0;
 }
 
 #hero-secondary-text,
@@ -67,9 +92,17 @@ button {
 #header-logo-text {
     font-size: 24px;
     color: #F9FAF8;
+    font-weight: bold;
 }
 
-#hero-content {
-    display: flex;
-    flex-direction: column;
+header ul {
+    gap: 35px;
+}
+
+
+.img-info {
+    border-color: #3882F6;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
 }
