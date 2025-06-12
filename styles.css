@@ -1,116 +1,125 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-html {
-    display: flex;
-    justify-content: center;
-    background-color:grey;
-}
-
+/* This is the general section */
 body {
     font-family: Roboto;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    max-width: 50%;
     margin: 0;
 }
-
-header {
-    background-color: #1F2937;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+ul {
+    list-style: none;
 }
-
+header,
 .hero {
     background-color: #1F2937;
-    display: flex;
-    flex: 1;
-    padding: 6rem;
 }
 
-#hero-content {
+
+/* This is the header section */
+header {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    color: #F9FAF8;
+    padding: 0 10%;
+    margin: 0;
+}
+header ul {
+    display: flex;
+    gap: 30px;
+    flex-shrink: 0; 
+}
+#header-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: auto;
+    flex-shrink: 0;
+}
+#header-links {
+    font-size: 18px;
 }
 
+
+/* This is the hero section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F9FAF8;
+    padding: 3rem 30%;
+}
+.hero-container {
+    flex-basis: 20rem;
+    flex-shrink: 0;
+    padding: 2rem;
+}
+#hero-main-text {
+    font-size: 48px;
+    font-weight: 900;
+    margin: 0;
+}
+#hero-secondary-text {
+    color: #E5E7EB;
+    margin: 20px 0;
+    font-size: 18px;
+}
+#hero-button {
+    background-color: #3882F6;
+    border: 0px;
+    border-radius: 10px;
+    padding: 5px 20px;
+    color: #F9FAF8;
+    font-weight: bold;
+    margin: 0;
+}
+.hero img {
+    width: 300px;
+}
+
+/* This is the information section */
 .information {
     display: flex;
     flex-direction: column;
-    flex: 1;
     align-items: center;
-    background-color: white;
+    padding: 2rem 20%;
+}
+.information ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 5rem;
+}
+.information li {
+    flex: 1;
+}
+.information img {
+    border: 3px solid #3882F6;
+    border-radius: 10px;
+    height: 125px;
+    width: 125px;
+}
+#information-text {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
 }
 
+/*This is the quote section*/
 .quote {
     background-color: #E5E7EB;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0.5rem 10rem;
+    justify-content: center;
+    padding: 3rem 20%;
 }
-
-.call-to-action {
-    display: flex;
-    flex: 1;
-    background-color: white;
-}
-
-footer  {
-    background-color: #1F2937;
-}
-
-ul {
-    display: flex;
-    list-style-type: none;
-}
-
-button {
-    background-color: #3882F6;
-    border-width: 0px;
-    border-radius: 5px;
-}
-
 #quote-text {
-    font-size: 24px;
+    font-size: 36px;
+    font-family: Light Italic;
     color: #1F2937;
-    font-family: "light italic";
-    margin-bottom: 0;
+    margin: 0;
+    text-align: justify;
 }
-
 #quote-person {
     align-self: flex-end;
-    margin-top: 0;
+    font-size: 20px;
     font-weight: bold;
-}
-
-#hero-main-text {
-    font-size: 48px;
-    color: #F9FAF8;
-    font-weight: 900;
-    margin: 0;
-}
-
-#hero-secondary-text,
-#header-link-text {
-    font-size: 18px;
-    color: #E5E7EB;
-}
-
-#header-logo-text {
-    font-size: 24px;
-    color: #F9FAF8;
-    font-weight: bold;
-}
-
-header ul {
-    gap: 35px;
-}
-
-
-.img-info {
-    border-color: #3882F6;
-    border-width: 5px;
-    border-style: solid;
-    border-radius: 10px;
 }
