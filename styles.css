@@ -9,7 +9,8 @@ ul {
     list-style: none;
 }
 header,
-.hero {
+.hero,
+footer {
     background-color: #1F2937;
 }
 
@@ -20,7 +21,6 @@ header {
     align-items: center;
     color: #F9FAF8;
     padding: 0 10%;
-    margin: 0;
 }
 header ul {
     display: flex;
@@ -79,7 +79,8 @@ header ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem 20%;
+    padding: 5rem 20%;
+    background-color: white;
 }
 .information ul {
     display: flex;
@@ -109,7 +110,7 @@ header ul {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 3rem 20%;
+    padding: 7rem 20%;
 }
 #quote-text {
     font-size: 36px;
@@ -122,4 +123,48 @@ header ul {
     align-self: flex-end;
     font-size: 20px;
     font-weight: bold;
+}
+
+/* This is the call to action section */
+.call-to-action {
+    color: #F9FAF8;
+    display: flex;
+    background-color: #3882F6;
+    border-radius: 20px;
+    margin: 4rem 30%;
+    padding: 2rem;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.call-to-action div {
+    display: flex;
+    flex-direction: column;
+}
+#call-to-action-button {
+    color: #F9FAF8;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px 20px;
+    min-width: max-content;
+    font-weight: bold;
+    background-color: #3882F6;
+}
+#call-to-action-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+#call-to-action-secondary-text {
+    font-size: 18px;
+    color: #E5E7EB;
+    margin: 10px 24px 0 0;
+}
+
+/* This is the footer section */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F9FAF8;
+    padding: 0 10%;
 }
